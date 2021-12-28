@@ -7,14 +7,44 @@
     android:background="@drawable/login_background"
     tools:context=".MenuGlowne">
 
+    <Button
+        android:id="@+id/registration_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background"
+        android:text="Wróć"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/registration_button"
+        app:layout_constraintTop_toBottomOf="@+id/registarion_password_confirmation" />
+
+    <EditText
+        android:id="@+id/registarion_password_confirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_edit_background"
+        android:ems="10"
+        android:hint="Powtórz hasło"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registration_password" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_registration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Logowanie"
-        android:textSize="60sp"
+        android:text="Rejestracja"
         android:textColor="@color/white"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +52,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/et_username"
+        android:id="@+id/registration_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -35,13 +65,13 @@
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_registration" />
 
     <EditText
-        android:id="@+id/et_password"
+        android:id="@+id/registration_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/login_edit_background"
         android:ems="10"
         android:hint="Hasło"
@@ -52,33 +82,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_username" />
+        app:layout_constraintTop_toBottomOf="@+id/registration_username" />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/registration_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="304dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/button_background"
-        android:text="Zaloguj"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Zarejestruj"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_password" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="304dp"
-        android:background="@drawable/button_background"
-        android:text="Nowy użytkownik"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+        app:layout_constraintTop_toBottomOf="@+id/registarion_password_confirmation" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

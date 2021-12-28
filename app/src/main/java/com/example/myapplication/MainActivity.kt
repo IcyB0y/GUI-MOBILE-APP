@@ -19,10 +19,9 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        handler = Handler(Looper.getMainLooper())
-        handler.postDelayed({
-            val intent = Intent(this, MenuGlowne::class.java)
-            startActivity(intent)
+        Handler().postDelayed({
+            val i = Intent(this, MainMenu::class.java)
+            startActivity(i)
             finish()
         }, 5000)
     }

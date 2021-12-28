@@ -13,8 +13,8 @@ class UserResponse {
         @SerializedName("username")
         @Expose
         var username: String? = null
-       /* @SerializedName("token")
+       @SerializedName("token")
         @Expose
-        var token: String? = null*/
+        var token: String? = null
     }
 }
