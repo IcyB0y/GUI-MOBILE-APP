@@ -47,7 +47,7 @@ class LoginScreen : AppCompatActivity() {
             override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
                 val user = response.body()
                 Log.e("token", user!!.data?.token!!)
-
+                Log.e("username", user!!.data?.username!!)
             }
 
             override fun onFailure(call: Call<UserResponse>, t: Throwable) {
