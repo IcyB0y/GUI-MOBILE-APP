@@ -7,8 +7,6 @@ import android.content.Intent
 import android.os.*
 import androidx.appcompat.app.AppCompatActivity
 
-import kotlin.concurrent.*
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,11 +16,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-
         Handler().postDelayed({
-            val i = Intent(this, MainMenu::class.java)
+            val i = Intent(this, LoginScreen::class.java)
             startActivity(i)
             finish()
         }, 5000)
+
     }
 }

@@ -17,6 +17,9 @@
             android:name=".MainMenu"
             android:exported="true" />
         <activity
+            android:name=".LoginScreen"
+            android:exported="true" />
+        <activity
             android:name=".nwm"
             android:exported="true" />
         <activity
