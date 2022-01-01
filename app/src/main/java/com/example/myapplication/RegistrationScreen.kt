@@ -11,7 +11,7 @@ class RegistrationScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration_screen)
 
-
+    test();
         configureBackButton();
     }
 
@@ -27,4 +27,34 @@ class RegistrationScreen : AppCompatActivity() {
             })
 
     }
+
+fun test(){
+    val register= findViewById<Button>(R.id.registration_button);
+    register.setOnClickListener(View.OnClickListener {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    })
+
+}
+
 }
